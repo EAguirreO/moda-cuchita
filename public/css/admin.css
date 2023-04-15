@@ -1,0 +1,8 @@
+.bg-login{
+    background-image: url(../img/bg_login2.jpg);
+    background-position: 10% bottom;
+    background-size: cover;
+}
+.bg-login>div{
+    background: rgb(255 255 255 / 30%) !important;
+}

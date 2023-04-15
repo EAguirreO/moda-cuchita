@@ -1,0 +1,136 @@
+.carousel_ini{
+	padding-left: 0;
+	padding-right: 0;
+}
+.carousel-caption {
+    right: 5%;
+    left: 5%;
+}
+.carousel-indicators {
+    bottom: 0px;
+}
+.carousel-indicators button{
+	top: 15px;
+	background-color: #000 !important;
+    opacity: 1 !important;
+	border: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+}
+
+.carousel-indicators .active{
+	background-color: #fff !important;
+}
+#myCarousel{
+	padding-left: 0;
+	padding-right: 0;
+}
+.slider_content h4{
+	font-size: 14px;
+	padding-top: 10px;
+	margin-top: 0;
+}
+.slider_content p{
+	font-size: 12px;
+}
+.slide-home{
+	background-image: url(../img/inicio/slider-2.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.slide-home::after{
+	content: '';
+	width: 100%;
+	display: block;
+	padding-bottom: 70%;
+}
+.slider_content {
+	margin: auto;
+	position: relative;
+	color: black;
+	text-shadow: none;
+	width: auto;
+	text-align: center;
+	padding: 10px;
+	background-color: white;
+}
+.carousel-inner img{
+	margin-left: auto;
+	margin-right: auto;
+    width: 100%;
+}
+.div_ini_02{
+	background-color: #171516;
+	color: white;
+}
+.div_ini_02 h2{
+	padding: 4rem 0 20px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.div_ini_02 p{
+	text-align: justify;
+	padding-bottom: 150px;
+}
+.div_ini_03{
+	text-align: center;
+}
+.div_ini_03 img{
+
+	position: relative;
+	bottom: 110px;
+}
+.div_ini_03 p{
+	position: relative;
+	bottom: 50px;
+}
+.div_ini_04{
+	background-color: #F6F5F0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.div_ini_04_container h4{
+	margin-bottom: 0;
+	font-size: 17px;
+	text-decoration: bold;
+	letter-spacing: 0.5px;
+	padding-top: 50px;
+}
+.sub_title {
+	border-bottom: 3px solid #22211F;
+	padding-bottom: 15px;
+
+}
+.div_ini_04_container_01{
+	padding-bottom: 40px;
+	text-align: justify;
+}
+.div_ini_05_container{
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.div_ini_05_container_01{
+	padding-right: 15px;
+	text-align: justify;
+
+}
+
+
+@media(min-width: 768px){
+	.slide-home::after{
+		padding-bottom: 30%;
+	}
+	.slider_content {
+		width: 700px;
+	}
+}
+
+@media(min-width: 1200px){
+	.slide-home::after{
+		padding-bottom: 25%;
+	}
+}
