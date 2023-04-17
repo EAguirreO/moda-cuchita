@@ -30,6 +30,26 @@ Route::get('/nosotros', function () {
     return view('pages.nosotros');
 });
 
+Route::get('/ninios', function () {
+    return view('pages.ninios');
+});
+
+Route::get('/ninias', function () {
+    return view('pages.ninias');
+});
+
+Route::get('/damas', function () {
+    return view('pages.damas');
+});
+
+Route::get('/caballeros', function () {
+    return view('pages.caballeros');
+});
+
+Route::get('/detalle', function () {
+    return view('pages.detalle');
+});
+
 Route::get('/catalogo', function () {
     return view('pages.catalogo');
 })->name('client.catalog');
@@ -39,18 +59,6 @@ Route::get('/catalogo/detalle/{identif}', function ($identif) {
     return view('pages.catalogo-detalle', compact('identif'));
     // return view('pages.catalogo-detalle');
 })->name('client.productDetail');
-
-Route::get('/procesos', function () {
-    return view('pages.procesos');
-});
-
-Route::get('/galeria', function () {
-    return view('pages.galeria');
-});
-
-Route::get('/clientes', function () {
-    return view('pages.clientes');
-});
 
 Route::get('/contactenos', function () {
     return view('pages.contactenos');
@@ -87,11 +95,11 @@ Route::middleware('auth:sanctum', 'verify.is.admin')->prefix('admin')->group(fun
 });
 
 //Idioma
-Route::get('/lang/{lang}', function($lang){
-    App::setLocale($lang);
-    session()->put('locale', $lang);
-    return redirect()->back();
-});
+// Route::get('/lang/{lang}', function($lang){
+//     App::setLocale($lang);
+//     session()->put('locale', $lang);
+//     return redirect()->back();
+// });
 
 //CREAR LINK STORAGE
 /*Route::get('/linkStorage', function () {

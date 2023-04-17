@@ -1,0 +1,339 @@
+/* Seccion 1 */
+.section-1{
+    padding: 150px 120px 10px;
+}
+.btn-atras{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.img-btn-atras{
+    margin-right: 5px;
+}
+.img-btn-atras-oculta{
+    display: none !important;
+    visibility: hidden !important;
+    margin-right: 5px;
+}
+.btn-atras:hover{
+    color: #ad17ba;
+}
+.btn-atras:hover .img-btn-atras{
+    display: none !important;
+    visibility: hidden !important;
+}
+.btn-atras:hover .img-btn-atras-oculta{
+    display: inline !important;
+    visibility: visible !important;
+}
+.section-1 > p{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+/* Seccion 2 */
+.section-2{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.sec-2-div-1{
+    width: 65%;
+}
+.sec-2-div-2{
+    width: 35%;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.categoria{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.nombre{
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    margin-bottom: 20px;
+}
+.nombre::after{
+    content: '';
+    width: 50%;
+    height: 7px;
+    background-color: black;
+    border-radius: 3px;
+    display: block;
+    position: relative;
+    top: 5px;
+}
+.codigo{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.precio{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.titulo-tallas{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.div-tallas{
+    margin-bottom: 10px;
+}
+.div-tallas > p{
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+.titulo-colores{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.div-colores{
+    margin-bottom: 60px;
+}
+.div-color{
+    width: 40px;
+    height: 20px;
+    border: 1px solid transparent;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.negro{
+    background-color: black;
+    border-color: black;
+}
+.azul{
+    background-color: #5d91f4;
+    border-color: #5d91f4;
+}
+.rojo{
+    background-color: #ec1010;
+    border-color: #ec1010;
+}
+.blanco{
+    border-color: black;
+}
+.btn-solicitar{
+    padding: 12px 30px;
+    color: #ad17ba;
+    border-color: #ad17ba;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.btn-solicitar:hover{
+    color: white;
+    background-color: #ad17ba !important;
+}
+
+/* Seccion 3 */
+.section-3{
+    padding: 100px 120px 50px;
+}
+.section-3 h2{
+	font-size: 3rem;
+	font-weight: 600;
+	color: #ad17ba;
+	margin-bottom: 10px;
+}
+.section-3 > .linea{
+	border-radius: 5px;
+	width: 350px;
+	height: 8px;
+	background-color: #ad17ba;
+	margin-bottom: 40px;
+}
+.prod-relacionado{
+	text-decoration: none;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.sec-3-prod{
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 380px !important;
+	overflow: hidden;
+	border-radius: 7px;
+	margin-bottom: 15px;
+}
+.sec-3-oculto{
+	display: none !important;
+	visibility: hidden !important;
+}
+.sec-3-oculto p{
+	color: white;
+	margin-bottom: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.5rem;
+	font-weight: 500;
+	width: 100%;
+	text-align: center;
+	background-color: #4747ba;
+}
+.sec-3-prod:hover > .sec-3-oculto{
+	display: flex !important;
+	visibility: visible !important;
+	height: 100%;
+}
+.nombre-producto{
+	text-align: center;
+	font-size: 2rem;
+	line-height: 2rem;
+	color: black;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+.categoria-producto{
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: black;
+	margin-bottom: 0;
+}
+
+@media (max-width: 1440px) {
+    .section-1{
+        padding-left: 80px;
+		padding-right: 80px;
+    }
+    .section-2{
+        padding-left: 80px;
+		padding-right: 80px;
+    }
+    .section-3{
+        padding-left: 80px;
+		padding-right: 80px;
+    }
+}
+@media (max-width: 1200px) {
+    .section-1{
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+    .section-2{
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+    .section-3{
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+@media (max-width: 992px) {
+    .section-1{
+        padding-top: 120px;
+    }
+    .sec-2-div-1{
+        width: 100%;
+    }
+    .sec-2-div-2{
+        width: 100%;
+        padding-right: 50px;
+    }
+    .section-2{
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .section-1{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+    .section-2{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+    .sec-2-div-2{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .nombre{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .precio{
+        font-size: 2.5rem;
+    }
+    .section-3{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+    .section-3 h2{
+		font-size: 2.5rem;
+        line-height: 2.5rem;
+	}
+    .section-3 > .linea{
+        width: 290px;
+    }
+}
+@media (max-width: 576px) {
+    .section-3 h2{
+		font-size: 2rem;
+        line-height: 2rem;
+	}
+    .section-3 > .linea{
+        width: 235px;
+    }
+}
+@media (max-width: 425px) {
+    .sec-2-div-2{
+        align-items: stretch !important;
+    }
+    .categoria{
+        text-align: center;
+    }
+    .nombre{
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .nombre::after{
+        margin: auto;
+    }
+    .precio{
+        font-size: 2rem;
+    }
+    .titulo-tallas{
+        font-size: 1.3rem;
+    }
+    .titulo-colores{
+        font-size: 1.3rem;
+    }
+    .section-3 h2{
+        text-align: center;
+    }
+    .section-3 .linea{
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .nombre-producto{
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+    .categoria-producto{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 375px) {
+    .section-1{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+    .section-2{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+    .section-3{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+    .section-3 h2{
+		font-size: 1.7rem;
+        line-height: 1.7rem;
+	}
+}
